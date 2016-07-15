@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Leonardo Menezes - Web Developer</title>
+        <link rel="stylesheet" href="home.css" type="text/css" />
+        <script src="js/jquery-3.0.0.js" type="text/javascript"></script>
+        <script src="js/leo.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <form id="form1" runat="server">
+            <div class="navbar">            
+                <div class="home">
+                    <p class="botNome"><img src="images/home.svg" alt="home" />Home</p>
+                </div>                                              
+                <div class="port">
+                    <p class="botNome">Portfolio</p>
+                    <div class="subMenu portDrop">
+                       <ul class="lista_drop">
+                           <li>Coming soon</li>    
+                       </ul>
+                    </div>
+                </div>
+                <div class="resume">
+                    <p class="botNome">Resume</p>                
+                </div>
+                <div class="about">
+                    <p class="botNome">About</p>
+                </div>
+                <div class="contact">
+                    <p class="botNome">Contact</p>                
+                </div>            
+                <a href="https://br.linkedin.com/in/leonardo-jord%C3%A3o-menezes-a64408ba" target="_blank"><img src="images/linke.png" class="lkdin" alt="search" /></a>
+            </div>   
+            <div class="aboutMe">
+                <img class="back" src="images/back.png" alt="back" />
+                <div class="aboutMeIn">
+                    <div class="aboutRight">
+                        <img class="aboutImg" src="images/aboutme.png" alt="about" />
+                    </div> 
+                    <div class="aboutLeft">
+                        <p class="aboutMeTitle">ABOUT ME</p>
+                        <p>Hi, I'm 21 years old, brazilian and since I was a kid I was passionate for art and technology, and like John Lasseter once said: <i>"The art challenges the technology, and the technology inspires the art."</i></p>
+                        <p>In 2013 I didn't know anything about "making art on computer" so I started to study at Melies (São Paulo) to learn more about graphic design.</p>
+                        <p>After learning more about graphic design at Melies, I started to study at AnimSchool. An online school which the instructors are animators from the greatest animation studios of the world, like Disney Animation Studios, BlueSky, Reel FX and others.</p>
+                        <p>And in 2015 I started to work as a system developer at "Consultoria FR" where I can improve my HTML, CSS, JavaScript (and jQuery), Ajax, VB.NET and SQL skills.</p>
+                        <p>That's me, and what I most love to do is create and create. It doesn't matter if it is a web system, web page or even an animation scene.</p>
+                        <p class="sign">Leonardo Menezes</p>
+                    </div>               
+                </div>                       
+            </div>   
+            <div class="ResumeScreen">
+                <img class="back" src="images/back.png" alt="back" />
+                <div class="ResumeIn">
+                    <div class="Resume">
+                        <p class="ResumeTitle">RESUME</p>
+                        <p class="resumeSubTitle">WORK</p>
+                        <p>2015 - Current | Developer - <strong>Fernandes & Rodrigues Consultores Associados</strong><br /><i>When I started to work at Fernandes & Rodrigues, I didn't know basically anything about web developing, and that's where I could have the oportunity to learn about it. My function is to be part of a team which develop web systems and it requires the knowledge of HTML, CSS, jQuery/JavaScript, Ajax, VB.NET and SQL Server.</i></p>
+                        <div class="dados">
+                            <div class="dadosIn dadosA">
+                                <p class="resumeSubTitle">TECHNIQUES</p>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript (plus jQuery)</li>
+                                    <li>Ajax</li>
+                                    <li>VB.NET</li>
+                                    <li>SQL Server</li>
+                                    <li>3D Animation</li>
+                                </ul>
+                            </div>
+                            <div class="dadosIn dadosB">
+                                <p class="resumeSubTitle">SOFTWARE</p>
+                                <ul>
+                                    <li>Adobe Photoshop</li>
+                                    <li>Adobe Fireworks</li>
+                                    <li>Autodesk Maya</li>
+                                    <li>Adobe Premiere</li>
+                                </ul>
+                            </div>
+                            <div class="dadosIn dadosC">
+                                <p class="resumeSubTitle">EDUCATION</p>
+                                <ul>
+                                    <li>MELIES | Escola de Cinema 3D e Animação (3D Modeling | 2013)</li>
+                                    <li>MELIES | Escola de Cinema 3D e Animação (3D Render and Image Editing | 2013 - 2014)</li>
+                                    <li>Udacity | Nanodegree by Google (Android Basics | 2016 - 2017)</li>
+                                </ul> 
+                            </div>                                                                                                
+                        </div>                                       
+                    </div>                              
+                </div> 
+            </div>  
+            <div class="ContactScreen">
+                <img class="back" src="images/back.png" alt="back" />
+                <div class="ContactIn">
+                    <div class="Contact">
+                        <p class="ContactTitle">CONTACT</p>                        
+                        <div class="fields">                            
+                            <asp:TextBox type="text" placeholder="Complete Name / Company Name *" runat="server" id="name" />                           
+                        </div>
+                        <div class="fields">
+                            <asp:TextBox type="text" placeholder="E-mail: example@example.com *" runat="server" ID="email"  />                                                                            
+                        </div>
+                        <div class="fields">
+                            <asp:TextBox type="text" placeholder="Subject" runat="server" ID="subject"  />                                                                            
+                        </div>
+                        <div class="fields">               
+                            <asp:TextBox type="text" placeholder="This is where you can write your message for me!*" style="max-height: 227px" TextMode = "MultiLine" runat="server" ID="msg" />
+                        </div>
+                        <div class="fields">
+                            <asp:Button id="send" style="width:100px;height:38px;border-radius:5px;border:none;padding:0;" class="botao" Text="SEND" runat="server"/>              
+                        </div>
+                    </div>                                                                                                                                                
+                </div> 
+            </div>  
+            <div class="logopr">
+                <div class="welcome">
+                    <p class="titulo">Welcome, I'm <span>Leonardo Menezes</span></p>
+                    <p class="subtit">Web Developer | São Paulo - Brasil</p>
+                    <div class="saibaMais">
+                        <p>LEARN MORE</p>
+                    </div>                
+                </div>
+            </div>
+            <div class="rod">
+                <div class="rod_int"> 
+                    <p>© 2016 Designed and Developed by Leonardo Menezes. <span>All Rights Reserved.</span></p>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

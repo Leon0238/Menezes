@@ -1,0 +1,752 @@
+﻿html{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+body {
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-image:url('images/city.jpg');
+    overflow:hidden;
+}
+
+form{
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.62);
+}
+
+.required::-webkit-input-placeholder {
+    color: #e30d0d
+}
+
+.navbar{
+    width:100%;
+    height:35px;
+    background: rgba(0, 0, 0, 0.5);
+    position:relative;
+}
+
+.home, .port, .resume, .about, .contact{
+    background-color:rgba(0, 0, 0, 0.7);
+    width:161px;
+    height:100%;
+    position:absolute;
+    left: 0px;
+    padding:0;
+    cursor:pointer;
+    border-bottom: 1px solid #00489f;
+}
+
+.port{
+    background-color:rgba(0, 0, 0, 0.6);
+    left: 161px;
+    border-bottom: 1px solid #7b2d2d;
+}
+
+.resume{
+    background-color:rgba(0, 0, 0, 0.5);
+    left: 322px;
+    border-bottom: 1px solid #8d7839;
+}
+
+.about{
+    background-color:rgba(0, 0, 0, 0.4);
+    left: 483px;
+    border-bottom: 1px solid #6f2dcd;
+}
+
+.contact{
+    background-color:rgba(0, 0, 0, 0.3);
+    left: 644px;
+    border-bottom: 1px solid #53ae3b;
+}
+
+.search{
+    position: absolute;
+    top: 7px;
+    right: 46px;
+}
+
+.lkdin{
+    width:17px;
+    height:auto;
+    position:absolute;
+    top:9px;
+    right:19px;
+    cursor:pointer;
+}
+
+.botNome{
+    color: #e5e6e7;
+    font-family: calibri;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-top: 6px;
+    padding: 0;
+    text-align: center;
+}
+
+.botNome img{
+    width: 16px;
+    position: absolute;
+    top: 9px;
+    left: 39px;
+}
+
+.subMenu{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 37px;   
+    width:162px;
+    left:0;
+    display:none;
+}
+
+.subMenu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: calibri;
+    font-size: 16px;
+    color:#FFFFFF;
+}
+
+.subMenu li{
+    background: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    cursor: pointer;
+}
+
+.home:hover, .port:hover, .resume:hover, .about:hover, .contact:hover {
+    background-color:#222222;
+}
+
+.aboutMe, .ResumeScreen, .ContactScreen{
+    width: 100%;
+    height: 100%;
+    font-family: calibri;
+    position:relative;
+    display:none;
+}
+
+.back{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    width: 42px;
+}
+
+.aboutMeIn, .ResumeIn, .ContactIn{
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
+    padding: 37px 0;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.ResumeIn{
+    padding: 56px 0;
+}
+
+.ContactIn{
+    width:770px;
+    padding: 58px 0;
+}
+
+.aboutLeft{
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 70%;
+}
+
+.Resume, .Contact{
+    margin:0 auto;
+    width: 80%;
+}
+
+.Contact{
+    width: 53%;
+}
+
+.sign{
+    text-align:right;
+    font-style:italic;
+}
+
+.aboutRight{    
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+}
+
+.aboutRight img{
+    width: 224px;
+    margin: 150px 16px;
+}
+
+.aboutMeTitle, .ResumeTitle, .ContactTitle{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.ContactTitle{
+    margin:0;
+}
+
+.resumeSubTitle{
+    font-weight:bold;
+    padding: 20px 0 0 0;
+}
+
+.Resume p{
+    margin:0;
+}
+
+.Resume i{
+    font-size:16px;
+    color:#fffbea;
+}
+
+.dados{    
+    width: 100%;
+    height: auto;
+}
+
+.dadosIn{
+    margin:30px 0;
+    display:inline;
+}
+
+.dadosIn ul{    
+    font-size: 16px;
+    color: #fffbea;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dadosIn li{
+    margin:10px 0;
+}
+
+.dadosA, .dadosB, .dadosC{
+    float: left;
+    width: 33%;
+}
+
+.dadosC{
+    float: right;
+}
+
+.contactA{
+    width: 50%;
+    float: left;
+}
+
+.fields{
+    margin: 10px 0;
+    width: 100%;
+}
+
+.fields input{
+    width: 400px;
+    height: 22px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 0 5px 9px;
+}
+
+.fields textarea{
+    margin: 0px;
+    width: 403px;
+    max-width: 403px;
+    height: 227px;
+}
+
+.botao{
+    width: 100px;
+    height: 38px;
+    border-radius: 5px;
+    border: none;
+    background-color: #8d8884;
+    color: white;
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color:#62605e;
+}
+
+.contactB{
+    width: 50%;
+    float: right;
+    margin: 0;
+}
+
+.contactB p{
+    padding: 0 0 0 19px;
+    margin:0;
+}
+
+.logopr{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 34px;
+    font-family: calibri;
+    font-weight: lighter;
+    color: #FFFFFF;
+    position:relative;
+}
+
+.welcome{
+    width: 100%;
+    height: 195px;
+    position: absolute;
+    bottom: 75px;
+    left: 0;
+}
+
+.titulo{
+    margin: 20px 32px 0;
+}
+
+.titulo span{
+    font-size: 45px;
+}
+
+.subtit{
+    font-size: 22px;
+    margin: 0 32px;
+}
+
+.saibaMais{
+    width: 162px;
+    height: 43px;
+    margin: 15px 32px;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.saibaMais:hover{
+    background-color:rgba(0, 0, 0, 0.21);
+}
+
+.saibaMais p{
+    font-size: 26px;
+    text-align: center;
+    font-weight: lighter;
+    line-height: 41px;
+    margin: 0;
+}
+
+.rod{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+
+.rod_int{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 39px;
+    position: fixed;
+    bottom: 0;
+}
+
+.rod_int p{
+    color: white;
+    font-family: calibri;
+    margin: 11px 20px;
+    text-align: right;
+}
+
+@media screen and (min-width: 1920px) {
+    .navbar{
+        height: 46px;
+    }
+
+    .lkdin {
+        width: 28px;
+    }
+
+    .botNome {
+        font-size: 25px;
+    }
+
+    .botNome img {
+        width: 21px;
+        position: absolute;
+        top: 12px;
+        left: 19px;
+    }
+
+    .logopr {
+        font-size: 55px;
+    }
+
+    .welcome {
+        position: absolute;
+        bottom: 138px;
+    }
+
+    .titulo span {
+        font-size: 71px;
+    }
+
+    .subtit {
+        font-size: 32px;
+    }
+
+    .saibaMais {
+        width: 213px;
+        height: 58px;
+        cursor: pointer;
+    }
+
+    .saibaMais p {
+        font-size: 34px;
+        margin: 0;
+        line-height: 55px;
+    }
+
+    .aboutMeIn {
+        width: 1312px;
+        height: auto;
+        margin: 0 auto;
+        padding: 119px 0;
+        color: #FFFFFF;
+        font-size: 27px;
+    }
+
+    .aboutRight {
+        width: 30%;
+    }
+
+    .aboutRight img {
+        width: 366px;
+        margin: 150px 16px;
+    }
+
+    .aboutLeft {
+        width: 70%;
+    }
+
+    .ResumeIn{
+        width:1060px;
+        font-size: 27px;
+        padding: 175px 0;
+    }
+
+    .dadosIn ul{
+        font-size:23px;
+    }
+
+    .Contact{
+        width: 71%;
+    }
+
+    .ContactIn{
+        padding: 250px 0;
+    }
+
+    .fields input {
+        width: 535px;
+    }
+
+    .fields textarea {
+        width: 538px;
+        max-width: 538px;
+        height: 227px;
+    }
+
+    #send{
+        width: 125px !important;
+        height: 49px !important;
+        font-size: 22px !important;
+    }
+
+    .Resume i {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    body{
+        background-position: center;
+    }
+
+    .home, .port, .resume, .about, .contact{  
+        width:73px;
+        height:100%;
+        position:absolute;
+        left: 0px;
+    }
+
+    .port{
+        left:73px;
+    }
+
+    .resume{
+        left:145px;
+    }
+
+    .about{
+        left:216px;
+    }
+
+    .contact{
+        left:289px;
+    }
+
+    .botNome{
+        font-size: 16px;
+    }
+
+    .botNome img{
+        display:none;
+    }
+
+    .lkdin{
+        display:none;
+    }
+
+    .logopr{
+        font-size:20px;
+    }
+
+    .welcome{
+        bottom:0;
+        left:0;
+    }
+
+    .titulo{
+        margin:20px 10px 0;
+    }
+
+    .titulo span{
+        font-size:24px;
+    }
+
+    .subtit{
+        font-size:15px;
+        margin:0 12px;
+    }
+
+    .saibaMais{
+        width:105px;
+        height:38px;
+        margin: 15px 14px;
+    }
+
+    .saibaMais p{
+        font-size:17px;
+        line-height:39px;
+    }   
+
+    .rod_int{
+        height:25px;
+    }
+
+    .rod_int p{
+        font-size:12px;
+        margin:4px 7px;
+    }
+
+    .rod_int span{
+        display:none;
+    }
+
+    .back{
+        width:25px;
+    }
+
+    .aboutMeIn, .ResumeIn, .ContactIn{
+        width:100%;
+        font-size: 15px;
+    }
+
+    .aboutRight{
+        margin: -9px auto;
+        padding: 0;
+        width: 156px;
+        float:none;
+    }
+
+    .aboutImg{
+        width: 156px !important;
+        margin: -12px 0px 0 !important;
+    }
+
+    .aboutLeft{
+        padding: 0;
+        margin: 0 auto;
+        width: 93%;
+        float:none;
+    }
+
+    .aboutLeft p{
+        margin: 7px 0;
+    }
+
+    .aboutMeTitle, .ResumeTitle, .ContactTitle{
+        font-size:19px;
+        margin:0;
+    }
+
+    .resumeSubTitle{
+        font-size:16px;
+    }
+
+    .dadosIn{
+        margin: -6px 3px;
+    }
+
+    .dadosB{
+        width:0;
+        display:none;
+    }
+
+    .dadosC{
+        width:60%;
+    }
+
+    .Resume, .Contact {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .fields{
+        width:100%;
+    }
+
+    .fields input{
+        width:100%;
+        padding:5px 0 5px 0;
+    }
+
+    .fields textarea{
+        width:98%;
+        max-width:98%;
+    }   
+}
+
+ @media screen and (max-height: 360px) {
+     .home, .port, .resume, .about, .contact {
+        width: 99px;
+    }
+     .botNome img {
+        left: 7px;
+    }
+    .port{
+        left:99px;
+    }
+    .resume{
+        left:198px;
+    }
+    .about{
+        left:297px;
+    }
+    .contact{
+        left:396px;
+    }
+    .back{
+        width:26px;
+    }
+    .aboutMeIn, .ResumeIn, .ContactIn {
+        width: 73%;
+        margin: 0 auto;
+        padding: 9px 0;
+        font-size: 13px;
+    }
+    .aboutRight{
+        width:0;
+        display:none;
+    }
+    .aboutLeft{
+        width:100%;
+        padding:0;
+        margin:0 auto;
+    }
+    .aboutMeTitle, .ResumeTitle, .ContactTitle {
+        font-size: 22px;
+        font-weight: bold;
+        margin: 0;
+    }
+    .sign{
+        display:none;
+    }
+    .resumeSubTitle {
+        font-weight: bold;
+        padding: 6px 0 0 0;
+    }
+    .Resume i {
+        font-size: 13px;
+    }
+    .dadosA, .dadosB{
+        width: 25%;
+    }
+    .dadosC{
+        width:47%;
+    }
+    .dadosIn {
+        margin: 0;
+    }
+    .dadosIn ul {
+        font-size: 13px;
+    }
+    .dadosIn li {
+        margin: 0;
+    }
+    .Contact {
+        width: 88%;
+    }
+    .fields textarea {
+        height: 63px;
+        max-height:63px;
+    }
+    .logopr {
+        font-size: 23px;
+    }
+    .titulo {
+        margin: 67px 30px 0;
+    }
+    .titulo span {
+        font-size: 36px;
+    }
+    .subtit {
+        font-size: 19px;
+        margin: 0 32px;
+    }
+    .saibaMais {
+        width: 137px;
+        height: 40px;
+        margin: 15px 32px;
+    }
+    .rod_int {
+        width: 100%;
+        height: 23px;
+    }
+    .saibaMais p {
+        font-size: 21px;
+        line-height: 41px;
+    }
+
+    .rod_int p {
+        margin: 5px 9px;
+        font-size: 12px;
+    }
+
+}
